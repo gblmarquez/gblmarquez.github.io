@@ -9262,7 +9262,7 @@ a:hover, a:focus {
 /*	About Me
 /*------------------------------------------------*/
 .about-me {
-  background-color: #91BBE5;
+  background-color: #CACACA;
 }
 
 .social .sub-heading {
@@ -9340,7 +9340,7 @@ ul.social-icons .icon:hover {
   max-width: 960px;
 }
 .timeline .year {
-  background: #336699;
+  background: #E4E4E4;
   font-size: 1em;
   line-height: 4;
   color: #fff;
