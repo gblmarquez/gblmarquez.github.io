@@ -9365,8 +9365,8 @@ ul.social-icons .icon:hover {
 }
 .timeline .event {
   width: 100%;
-  background: #CACACA;
-  border-color: #E4E4E4;
+  background: #E4E4E4;
+  border-color: #AFAFAF;
   text-align: left;
   margin: 50px 0;
   padding: 1.3em;
