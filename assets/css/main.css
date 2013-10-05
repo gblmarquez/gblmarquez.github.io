@@ -9262,7 +9262,7 @@ a:hover, a:focus {
 /*	About Me
 /*------------------------------------------------*/
 .about-me {
-  background-color: #CACACA;
+  background-color: #E4E4E4;
 }
 
 .social .sub-heading {
@@ -9329,7 +9329,7 @@ ul.social-icons .icon:hover {
 /*	Resume
 /*------------------------------------------------*/
 .resume {
-  background-color: #E4E4E4;
+  background-color: #CACACA;
 }
 
 /* timeline */
@@ -9343,7 +9343,7 @@ ul.social-icons .icon:hover {
   background: #E4E4E4;
   font-size: 1em;
   line-height: 4;
-  color: #fff;
+  color: #336699;
   width: 6em;
   border-radius: 50%;
   margin-top: 0;
@@ -9365,8 +9365,8 @@ ul.social-icons .icon:hover {
 }
 .timeline .event {
   width: 100%;
-  background: #99C5F2;
-  border-color: #336699;
+  background: #CACACA;
+  border-color: #E4E4E4;
   text-align: left;
   margin: 50px 0;
   padding: 1.3em;
@@ -9588,7 +9588,7 @@ ul.social-icons .icon:hover {
 /*	Contacts
 /*------------------------------------------------*/
 .contacts {
-  background-color: #91BBE5;
+  background-color: #E4E4E4;
 }
 .contacts .google-map {
   margin: 40px 0;
