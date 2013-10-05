@@ -1,4 +1,4 @@
-gblmarquez.github.com
+gblmarquez.github.io
 ====================
 
-This is the source code for [gabrielmarquez.com.br](http://gabrielmarquez.com.br/).
+This is the source code for [gabrielmarquez.com](http://gabrielmarquez.com/).
