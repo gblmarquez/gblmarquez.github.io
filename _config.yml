@@ -1,33 +1,60 @@
-safe:        true
-auto:        true
-server:      false
-server_port: 4000
-url: http://localhost:4000
+url: 'http://127.0.0.1:4000'
 
-source:      .
-destination: ./_site
-plugins:     ./_plugins
+baseurl: ''
+permalink: pretty
+markdown: rdiscount
 
-future:      true
-lsi:         false
-pygments:    false
-markdown:    rdiscount
-permalink:   pretty
-
-rdiscount:
-  extensions: [smart]
-
-kramdown:
-  auto_ids: true,
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  use_coderay: false
-  
-  coderay:
-    coderay_wrap: div
-    coderay_line_numbers: inline
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: style
+prose:
+  rooturl: '_posts'
+  siteurl: 'http://gabrielmarquez.com/blog'
+  relativeLinks: 'http://gabrielmarquez.com/blog/links.jsonp'
+  media: 'media'
+  metadata:
+    _posts:
+      - name: "category"
+        field:
+          element: "hidden"
+          value: "blog"
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "blog"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "splash"
+        field:
+          element: "text"
+          label: "Splash image"
+          value: ""
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
+          options:
+            - name: "Apples"
+              value: "apples"
+            - name: "Bananas"
+              value: "bananas"
+            - name: "Pears"
+              value: "pears"
+            - name: "Mangos"
+              value: "mangos"
+    _posts/static:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "page"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "Permalink"
+          value: ""

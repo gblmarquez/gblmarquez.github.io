@@ -1,117 +1,31 @@
+---
+title: 'Gabriel Marquez Blog'
+---
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="pt-br" class="no-js"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="pt-br" class="no-js"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="pt-br" class="no-js"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="pt-br" class="no-js"> <!--<![endif]-->
-
+<html>
 <head>
-	<title>{{ page.title }} &#8211; gabrielmarquez.com</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Gabriel Marquez Timeline Resume">
-	<meta name="author" content="Gabriel Marquez">
-
-	<!-- CSS -->
-	<link href="assets/css/main.css" media="screen, projection" rel="stylesheet" type="text/css">
-
-	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="assets/js/html5shiv.js"></script>
-      <script src="assets/js/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="assets/ico/favicon.png">
-
+  <title>{% if page.url != '/blog/' %}Gabriel Marquez |{% endif %} {{page.title}}</title>
+  <meta charset='UTF-8'/>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <link rel='alternate' type='application/rss+xml' title='RSS' href='/blog.rss' />
+  <link rel='shortcut icon' href='/img/favicon.ico' type='image/x-icon' />
+  <link href='/css/blog.css' rel='stylesheet' />
 </head>
-<body data-spy="scroll" data-target="#main-nav">
-	<!-- WRAPPER -->
-	<div class="wrapper">
-				
-		<!-- main navigation -->
-		<nav class="navbar navbar-default navbar-fixed-top" id="main-nav" role="navigation">
-			<div class="container">
-				<!-- brand and toggle -->
-				<div class="navbar-header">
-					<a href="./" class="navbar-brand"><img src="/assets/img/logo.png" height="30" /></a>
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".main-nav-collapse">
-						<span class="sr-only">Toggle Navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>					
-				</div>
-				
-				<!-- navigation links -->
-				<div class="collapse navbar-collapse main-nav-collapse">
-					<ul class="nav navbar-nav">
-						<li><a href="#about-me">SOBRE MIM</a></li>
-						<li><a href="#resume">RESUME</a></li>
-						<li><a href="#projects">PROJETOS</a></li>
-						<li><a href="#contacts">CONTATO</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-		<!-- end main navigation -->
-
-		<!-- header -->
-		{% include header.html %}
-		<!-- end header -->
-		
-		<!-- about-me -->
-		{% include about-me.html %}
-		<!-- end about-me -->
-
-		<!-- resume -->
-		{% include resume.html %}
-		<!-- end resume -->
-
-		<!-- projects -->
-		{% include projects.html %}
-		<!-- end projects -->
-
-		<!-- contacts -->
-		{% include contacts.html %}
-		<!-- end contacts -->
-
-		<!-- footer -->
-		<footer class="footer">
-			<p>Copyright 2013 Gabriel Marquez. All Rights Reserved.</p>
-		</footer>
-		<!-- end footer -->
-
-	</div>
-	<!-- END WRAPPER -->
-
-	<!-- Javascript -->
-	<script type="text/javascript" src="assets/js/jquery-1.7.2.min.js"></script>
-	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="assets/js/modernizr.js"></script>
-	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-	<script type="text/javascript" src="assets/js/jquery.ui.map.full.min6aec.js?ver=3.0"></script>
-	<script type="text/javascript" src="assets/js/jquery.scrollTo-1.4.3.1-min.js"></script>
-	<script type="text/javascript" src="assets/js/jquery.localscroll-1.2.7-min.js"></script>	
-	<script type="text/javascript" src="assets/js/main.js"></script>
-	<script type="text/javascript">
-
-      /*var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-9261591-1']);
-      _gaq.push(['_setDomainName', 'adamralph.com']);
-      _gaq.push(['_setAllowLinker', true]);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();*/
-
-    </script>
+<body>
+  <div class='container'>
+    <div class='col12 clearfix'>
+      <div class='header col6 margin3 pad4h'>
+        <div class='clearfix col12'>
+          <div class='menu fr'>
+			<a class='{% if page.url == "/" %}active{% endif %}' href='/'>Home</a>
+            <a class='{% if page.section == "blog" %}active{% endif %}' href='/blog'>Blog</a>
+            <a class='{% if page.url == "/about/" %}active{% endif %}' href='/about'>About</a>
+          </div>
+          <h1 class='title'><a href='/blog'>{{page.title}}</a></h1>
+        </div>
+      </div>
+    </div>
+    {{content}}
+  </div>
+  <script src='/js/site.js'></script>
 </body>
-
-</html>
